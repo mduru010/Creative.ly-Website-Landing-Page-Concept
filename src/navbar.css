@@ -1,0 +1,20 @@
+.link-list {
+  padding: 15px;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+#logo-text {
+  font-family: "Dancing Script";
+  font-size: 30px;
+}
+
+nav button {
+  padding: 10px 30px 10px 30px;
+  border-radius: 30px;
+  border: none;
+  background-image: linear-gradient(to left, moccasin, lightpink, lightblue);
+}

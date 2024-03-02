@@ -1,0 +1,38 @@
+body,
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Add any additional styling for the background section */
+}
+
+.hero-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.logo-banner {
+  margin-top: 50px;
+}
+
+.gallery {
+  margin-top: 50px;
+}
+
+.footer {
+  margin-top: 50px;
+}

@@ -1,0 +1,58 @@
+body {
+  background-color: #2e3537;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  background-color: black;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.wrapper:before,
+.wrapper:after {
+  content: "";
+  position: absolute;
+  height: 130px;
+  width: 150px;
+  z-index: 2;
+}
+
+.wrapper:after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.wrapper:before {
+  left: 0;
+  top: 0;
+}
+
+.wrapper .track {
+  display: flex;
+  width: calc(150px * 10);
+  animation: scroll 15s linear infinite;
+}
+
+.wrapper .logo img {
+  margin-left: 20px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-150px * 3)
+    ); /* Adjusted to match the total width of the track */
+  }
+}
